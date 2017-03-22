@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train Station</title>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>All Aboard the Train!</h1>
+            <p></p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">TRAIN SCHEDULE</div>
+                    <table class="table" id="trainTable">
+                        <thead>
+                            <tr>
+                                <th>Train Line</th>
+                                <th>Destination</th>
+                                <th>Next Train</th>
+                                <th>Frequency (min)</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Add Train Line</div>
+                    <div class="panel-body">
+                        <div class="input-group input-group-lg">
+                            <label>Train Line</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="trainLineInput">
+                            </div>
+                            <br>
+                            <label>Destination</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="trainDestinationInput">
+                            </div>
+                            <br>
+                            <label>First Train Time (HH:mm)</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="firstTimeInput">
+                            </div>
+                            <br>
+                            <label>Frequency (min)</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="trainFrequencyInput">
+                            </div>
+                            <br>
+                            <div>
+                                <span class="input-group-btn">
+								<button class="btn btn-default" type="button" id="addTrainButton">Add Train</button>
+								</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script rel="javascript" type="text/javascript" src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
